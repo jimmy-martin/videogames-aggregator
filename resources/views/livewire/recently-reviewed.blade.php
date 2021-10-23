@@ -35,6 +35,24 @@
         </div>
     </div>
     @empty
-    <div class="spinner mt-8"></div>
+        @foreach (range(1, 3) as $game)
+        <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
+            <div class="relative flex-none">
+                <div class="bg-gray-700 w-32 lg:w-48 h-40 lg:h-56 text-transparent">
+                    Image goes here
+                </div>
+            </div>
+            <div class="ml-12">
+                <div class="inline-block text-lg leading-tight text-transparent bg-gray-700 rounded mt-4">
+                    Title goes here
+                </div>
+                <div class="mt-8 space-y-4 hidden lg:block">
+                    @foreach (range(1, 3) as $index)
+                    <span class="text-transparent bg-gray-700 rounded inline-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste provident veritatis ducimus.</span>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+        @endforeach
     @endforelse
 </div>
