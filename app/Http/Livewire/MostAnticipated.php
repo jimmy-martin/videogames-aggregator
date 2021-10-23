@@ -29,20 +29,6 @@ class MostAnticipated extends Component
                 )->post('https://api.igdb.com/v4/games')
                 ->json();
         });
-
-        // $this->mostAnticipated = Http::withHeaders(config('services.igdb'))
-        //     ->withBody(
-        //         "fields name, cover.url, first_release_date, total_rating_count, platforms.name, platforms.abbreviation, rating, rating_count, summary;
-        //         where platforms = (48,49,130,6)
-        //         & (first_release_date >= {$current}
-        //         & first_release_date < {$afterFourMonths});
-        //         sort total_rating_count desc;
-        //         limit 4;",
-        //         "text/plain"
-        //     )->post('https://api.igdb.com/v4/games')
-        //     ->json();
-
-        // dump($mostAnticipated);
     }
 
     public function render()
