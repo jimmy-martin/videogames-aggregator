@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/app.css">
+    <livewire:styles />
     <title>Video Games</title>
 </head>
 <body class="bg-gray-900 text-white">
@@ -46,5 +47,7 @@
             Powered By <a href="#" class="underline hover:text-gray-400">IGDB API</a>
         </div>
     </footer>
+
+    <livewire:scripts />
 </body>
 </html>
