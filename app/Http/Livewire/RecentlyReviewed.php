@@ -42,7 +42,7 @@ class RecentlyReviewed extends Component
         return view('livewire.recently-reviewed');
     }
 
-    public function formatToView($games)
+    private function formatToView($games)
     {
         return collect($games)->map(function ($game) {
             return collect($game)->merge([
